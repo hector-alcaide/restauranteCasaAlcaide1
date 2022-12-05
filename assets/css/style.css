@@ -1,0 +1,576 @@
+/****Fuentes****/
+/*Montserrat*/
+@font-face {
+    font-family: montserrat-medium;
+    src: url(/assets/fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    src: url(/assets/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+/*Sangrita*/
+@font-face {
+    font-family: dumbledor;
+    src: url(/assets/fonts/dumbledor/dum1.ttf);
+}
+
+/****Estilo Fondo****/
+/*Colores*/
+.bg-color1 {
+    background-color: #340909;
+}
+
+.bg-color2 {
+    background-color: #130303;
+}
+
+.bg-color3 {
+    background-color: #000000;
+}
+
+/*Imagen fondo*/
+.bg-image1 {
+    background-image: url("/assets/img/backgroundImage.jpg");
+}
+
+/****Estilos texto****/
+.text-color1 {
+    color: #F5F5F5;
+}
+
+.text-color2 {
+    color: #D6D6D6;
+}
+
+/****Estilos etiquetas texto****/
+h1 {
+    font-family: dumbledor;
+    font-size: 5.313rem;
+    color: #F5F5F5;
+    text-align: center;
+    width: 450px;
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    margin-bottom: 45px;
+    border-bottom: solid 2px #E0E0E0;
+}
+
+h2 {
+    font-family: montserrat-regular;
+    font-size: 2.25rem;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+p {
+    font-family: montserrat-regular;
+    font-size: 20px;
+    color: #F5F5F5;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 60px;
+        width: 200px;
+        height: 125px;
+        padding-top: 50px;
+        margin-bottom: 20px;
+        border-bottom: solid 2px #E0E0E0;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+/****Estilos botones****/
+.button-1 {
+    width: 230px;
+    height: 60px;
+    border: solid 2px #E0E0E0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    color: #F5F5F5;
+    font-family: montserrat-regular;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.button-1:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+button.button-1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/****Secciones generales****/
+/* Clase contenedor */
+.contenedor {
+    width: 85rem;
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Pantallas menor que 1366*/
+@media (max-width: 1366px) {
+    .contenedor {
+        max-width: 100%;
+    }
+}
+
+/*Banner principal*/
+.bannerPrincipal {
+    width: 1920px;
+    height: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("/assets/img/backgroundBannerPrincipal.jpg");
+    padding-top: 140px;
+}
+
+@media (max-width: 1920px) {
+    .bannerPrincipal {
+        width: 100%;
+    }
+}
+
+.bannerPrincipal h1 {
+    width: 600px;
+}
+
+.bannerPrincipal h2 {
+    font-size: 26px;
+}
+
+.bannerPrincipal p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    text-align: center;
+    font-size: 22px;
+}
+
+@media (min-width: 576px) {
+    .bannerPrincipalMovil {
+        width: 0px;
+        height: 0px;
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .bannerPrincipal {
+        width: 100%;
+        height: 270px;
+        padding-top: 0px;
+        background-image: url("/assets/img/backgroundBannerPrincipalMovil.jpg");
+    }
+
+    .bannerPrincipal div {
+        width: 0px;
+        height: 0px;
+        display: none;
+    }
+
+    .bannerPrincipal h1 {
+        font-size: 60px;
+        width: 60%;
+        height: 180px;
+        padding-top: 30px;
+        margin-bottom: 20px;
+        border-bottom: solid 2px #E0E0E0;
+    }
+
+    .bannerPrincipalMovil div p {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+/****Navbar header****/
+.navbar.navbar-expand-lg {
+    margin: 0px;
+    padding: 0%;
+}
+
+.nav-item {
+    width: 17rem;
+}
+
+.nav-item a {
+    padding: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-family: montserrat-regular;
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid white;
+}
+
+.navbar-nav .nav-link:focus {
+    color: black;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white;
+}
+
+@media (max-width: 1366px) {
+    .navbar-nav {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    li#logo {
+        height: 0px;
+        width: 0px;
+        display: none;
+    }
+
+    .nav-item, .navbar-nav .nav-link.active {
+        text-align: left;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    li.nav-item {
+        margin-left: -20%;
+    }
+
+    img#logoMovil {
+        width: 116.92px;
+        height: 76px;
+    }
+}
+
+@media (min-width: 576px) {
+    img#logoMovil {
+        height: 0px;
+        width: 0px;
+        display: none;
+    }
+}
+
+/*footer**/
+#copyright p{
+    font-size: 14px;
+    color: #ADADAD;
+}
+
+.footerCol a{
+    float: left;
+    padding-top: 10px;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: left;
+    color: #F5F5F5;
+}
+.footerCol a:hover{
+    color: #ADADAD;
+}
+.redesSocialesFooter{
+    height: 32px;
+    width: 32px;
+    padding: 0px!important;
+    margin-bottom: 20px;
+}
+#instagramFooter {
+    background-image: url("/assets/img/icons/instagramFooter.png");
+}
+
+#facebookFooter {
+    background-image: url("/assets/img/icons/facebookFooter.png");
+}
+
+#twitterFooter {
+    background-image: url("/assets/img/icons/twitterFooter.png");
+}
+
+/*Contenido de la seccion principal de la pagina, excepto home*/
+.contentPage {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 20px;
+}
+
+/*Boton movil menu*/
+.ml-max {
+    display: block;
+    /*
+      IMPORTANTE
+
+      hacer breakpoints
+    
+    */
+    margin-left: 90%;
+}
+
+/*Icono menu*/
+.navbar-toggler-icon {
+    background-image: url("/assets/img/icons/iconoMenu.png");
+}
+
+/****Home****/
+.home section {
+    padding-top: 130px;
+}
+
+.home h2 {
+    font-family: dumbledor;
+    font-size: 55px;
+}
+
+.home p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/*Imagenes de productos*/
+.home .imagenProductosSombra {
+    width: 453.33px;
+    height: 300px;
+}
+
+#imagenEnsaladasSombra {
+    background-image: url("/assets/img/products/imagenEnsaladasSombra.jpg");
+}
+
+#imagenCarnesSombra {
+    background-image: url("/assets/img/products/imagenCarnesSombra.jpg");
+}
+
+#imagenPescadosSombra {
+    background-image: url("/assets/img/products/imagenPescadosSombra.jpg");
+}
+
+#imagenVinosSombra {
+    background-image: url("/assets/img/products/imagenVinosSombra.jpg");
+}
+
+#imagenCervezasSombra {
+    background-image: url("/assets/img/products/imagenCervezasSombra.jpg");
+}
+
+#imagenPostresSombra {
+    background-image: url("/assets/img/products/imagenPostresSombra.jpg");
+}
+
+#iconoHorarios {
+    background-image: url("/assets/img/icons/horarioIcon.png");
+    height: 80px;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#iconoUbicacion {
+    background-image: url("/assets/img/icons/ubicacionIcon.png");
+    height: 80px;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.redesSociales {
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.redesSociales a {
+    margin-right: 80px;
+    margin-left: 80px;
+    height: 60px;
+    width: 60px;
+}
+
+#instagram {
+    background-image: url("/assets/img/icons/instagram.png");
+}
+
+#facebook {
+    background-image: url("/assets/img/icons/facebook.png");
+}
+
+#twitter {
+    background-image: url("/assets/img/icons/twitter.png");
+}
+
+@media (max-width: 576px) {
+    .home section {
+        padding-top: 20px;
+    }
+
+    .home h2 {
+        font-family: dumbledor;
+        font-size: 50px;
+    }
+
+    .home p {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .home .imagenProductosSombra {
+        width: 100%;
+        height: 150px;
+    }
+
+    #imagenEnsaladasSombra {
+        background-image: url("/assets//img/products/imagenEnsaladasSombraMovil.jpg");
+    }
+
+    #imagenCarnesSombra {
+        background-image: url("/assets//img/products/imagenCarnesSombraMovil.jpg");
+    }
+
+    #imagenPescadosSombra {
+        background-image: url("/assets//img/products/imagenPescadosSombraMovil.jpg");
+    }
+
+    #imagenVinosSombra {
+        background-image: url("/assets//img/products/imagenVinosSombraMovil.jpg");
+    }
+
+    #imagenCervezasSombra {
+        background-image: url("/assets//img/products/imagenCervezasSombraMovil.jpg");
+    }
+
+    #imagenPostresSombra {
+        background-image: url("/assets//img/products/imagenPostresSombraMovil.jpg");
+    }
+
+    .panelCarta .button-1 {
+        width: 100%;
+    }
+
+    .redesSociales a {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+/****Carta****/
+/*Ventana modal añadir producto*/
+/*Botón añadir producto*/
+#buttonAddProduct {
+    height: 36px;
+    width: 36px;
+    background-color: transparent;
+}
+
+#buttonAddProduct div {
+    height: 36px;
+    width: 36px;
+    background-image: url("/assets/img/icons/addProductIcon.png");
+}
+
+#buttonAddProduct div:hover {
+    background-image: url("/assets/img/icons/addProductIconHover.png");
+}
+
+/*Imagenes de productos*/
+#imagenEnsaladas {
+    background-image: url("/assets//img/products/imagenEnsaladas.jpg");
+}
+
+#imagenCarnes {
+    background-image: url("/assets//img/products/imagenCarnes.jpg");
+}
+
+#imagenPescados {
+    background-image: url("/assets//img/products/imagenPescados.jpg");
+}
+
+#imagenVinos {
+    background-image: url("/assets//img/products/imagenVinos.jpg");
+}
+
+#imagenCervezas {
+    background-image: url("/assets//img/products/imagenCervezas.jpg");
+}
+
+#imagenPostres {
+    background-image: url("/assets//img/products/imagenPostres.jpg");
+}
+
+.imagenProductos {
+    width: 450px;
+    height: 300px;
+}
+
+@media (max-width: 576px) {
+    .imagenProductos {
+        height: 0px;
+        width: 0px;
+    }
+
+    .col-12 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.anchoProductos {
+    width: 51.563rem;
+}
+
+div.col-lg-6 p {
+    margin-bottom: 0.25rem;
+}
+
+/****Pedidos****/
+.pedidos{
+    padding-bottom: 150px;
+}
+
+#sumaCantidad {
+    height: 36px;
+    width: 36px;
+    background-color: transparent;
+}
+
+#sumaCantidad div {
+    height: 36px;
+    width: 36px;}
+
+#restaCantidad {
+    height: 36px;
+    width: 36px;
+    background-color: transparent;
+}
+
+#restaCantidad div {
+    height: 36px;
+    width: 36px;
+}
